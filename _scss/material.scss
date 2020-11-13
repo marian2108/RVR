@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import './_nullstyle';// Файл обнуляющих стилей
-//============== header==========
+@import './_nullstyle';
 @import './_header';
 @import './slider';
 @import './footer';
@@ -16,10 +15,8 @@ body { font-family: 'Lora', serif;}
 }
 .container{
    max-width: 1170px;
-   // padding: 0px 15px 0px;
    margin: 0 auto;
 }
-
 //=================== Матеріали та технології ==========
 
 .info {
@@ -27,8 +24,6 @@ body { font-family: 'Lora', serif;}
 }
 .subtitle {
    height: 69px;width: 100%;
-   // text-align: center;
-   // background: #313131;
    background: linear-gradient(90.27deg, rgba(14, 14, 14, 0.9) 16.76%, rgba(21, 8, 0, 0.774) 90.47%);
    border-radius: 20px;
    color: #ffffff;
@@ -109,7 +104,6 @@ body { font-family: 'Lora', serif;}
             img{
             border-radius: 20px;
             transition: all 0.8s ease;
-            // transition: box-shadow 0.8s ease;
             border: 2px solid rgba(106, 106, 106, 0.69);
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
             margin: 0px -5px -5px 0px;
@@ -117,12 +111,10 @@ body { font-family: 'Lora', serif;}
          .popup-imgWood {
             z-index: 100;
             &__content {
-               // margin: 20px auto 20px;
                padding: 20px;
                img{
                   width: 100%;
                   height: 100%;
-                  // z-index: 50;
                }   
             }
          }
@@ -137,8 +129,6 @@ body { font-family: 'Lora', serif;}
             } 
          }
       }
-
-      
 }
 
 //========================== colors =======================================
@@ -151,7 +141,6 @@ body { font-family: 'Lora', serif;}
          padding: 12px 0px 0px 0px;
 }
 %colors-bg {
-      // background: #313131;
       background: linear-gradient(90.27deg, rgba(14, 14, 14, 0.9) 16.76%, rgba(21, 8, 0, 0.774) 90.47%);
       border-radius: 20px;
       height: 330px;
