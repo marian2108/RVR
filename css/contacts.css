@@ -89,8 +89,8 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: 18px;
     right: 20px;
-    width: 30px;
-    height: 18px;
+    width: 40px;
+    height: 28px;
     cursor: pointer;
     z-index: 5;
   }
@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     position: absolute;
-    top: 8px;
+    top: 13px;
     left: 0;
     width: 100%;
     height: 2px;
@@ -122,13 +122,13 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
-    top: 8px;
+    top: 13px;
   }
   .header .icon-menu.active span:last-child {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg);
-    bottom: 8px;
+    bottom: 13px;
   }
 }
 
@@ -153,6 +153,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 85px;
   background-color: #DFDFDF;
+}
+
+@media (max-width: 800px) {
+  .header-fixed {
+    height: 65px;
+  }
 }
 
 .header-fixed__row {
@@ -403,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
   font-weight: bold;
   font-size: 26px;
-  line-height: 50px;
+  line-height: 35px;
   border-radius: 20px;
   color: #4b4b4b;
 }
