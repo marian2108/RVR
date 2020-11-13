@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import './_nullstyle';// Файл обнуляющих стилей
+//============== header==========
+@import './_header';
+@import './slider';
+@import './footer';
+@import './popup-galery';
+@import './ibg';
+
+body { font-family: 'Lora', serif;}
+body.lock{
+   overflow: hidden;
+}
+.wrapper{
+   overflow: hidden;
+   min-height: 100%;
+}
+.container{
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+.galery {
+   .container {
+      margin: 115px auto 0px;
+      padding: 0px 10px 0px;
+   }
+   &__title {
+      height: 70px;
+      background: linear-gradient(90.27deg, rgba(14, 14, 14, 0.9) 16.76%, rgba(21, 8, 0, 0.774) 90.47%);
+      border-radius: 20px;
+      font-size: 34px;
+      line-height: 65px;
+      font-style: italic;
+      font-weight: 700;
+      text-align: center;
+      color: #ffffff;
+      margin: 0px 0px 40px 0px;
+   }
+   &__block {
+      margin: 0px 0px 30px 0px;
+   }
+}
+
+
+// ========== slide =====================
+.item {
+   background: #F7F7F7;
+   border: 1px solid rgba(42, 41, 46, 0.5);
+   border-radius: 20px;
+   min-width: 300px;
+   // max-width: 330px;
+   min-height: 380px;
+   padding: 10px 10px 20px;
+   margin: 0px 10px 20px;
+
+   &__text {
+      text-align: center;
+      font-size: 28px;
+      line-height: 37px;
+      font-style: italic;
+      font-weight: 700;
+   }
+
+   &__image-b {
+      position: relative;
+      height: 100%;
+      // align-self:center ;
+      margin: 10px 0px 10px 0px;
+      height: 210px;
+      border: 1px solid rgba(42, 41, 46, 0.5);
+      border-radius: 20px;
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+      img{
+         position: absolute;
+         top: 0;left: 0;
+         height: 100%; width: 100%;
+         border-radius: 20px;
+      }
+   }
+   
+   &__image-s {
+      min-width: 0;
+      display: flex;
+      // flex: 1 1 62px;
+      align-content: center;
+      max-height: 80px;
+      &__img{
+         min-width: 0;
+         border: 1px solid rgba(42, 41, 46, 0.5);
+         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+         border-radius: 10px;
+         margin: 0px 5px;
+         &:first-child{margin-left: 0;}
+         &:last-child{margin-right: 0;}
+         overflow: hidden;
+         max-height: 80px;
+         img{
+               border-radius: 10px;
+               height: 100%; 
+               width: 100%; 
+               object-fit: cover;
+               object-position: center;
+         }
+      }
+      &.one{
+         margin: 0 auto;
+         max-height: 100px;
+         max-width: 60%; 
+         img{
+            max-height: 100px;
+         }
+      }
+   }
+}
+// ============== popup ==================
+.popup {
+   position: fixed;
+   top: 0; left: 0;
+   z-index: 51;
+   min-width: 100%;
+   min-height: 100%;
+   background: white;
+   overflow: hidden;
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.8s ease;
+   &__body{
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+   }   
+   &__content{
+      align-self: center;
+      position: relative;
+      max-width: 1200px;
+      max-height: 1000px;
+      padding: 0px 20px;
+      @media (max-width: 1300px) {
+         max-width: 1000px;
+      }
+      @media (max-width: 1150px) {
+         max-width: 900px;
+      }
+      @media (max-width: 950px) {
+         max-width: 800px;
+      }
+      @media (max-width: 850px) {
+         max-width: 700px;
+      }
+      @media (max-width: 750px) {
+         max-width: 700px;
+      }
+      @media (max-width: 700px) {
+         max-width: 650px;
+      }
+      @media (max-width: 650px) {
+         max-width: 600px;
+      }
+      @media (max-width: 600px) {
+         max-width: 500px;
+      }
+      @media (max-width: 500px) {
+         max-width: 400px;
+      }
+      @media (max-width: 400px) {
+         max-width: 350px;
+      }
+   }
+
+   
+   &__close{
+      position: absolute;
+      top: 30px;right: 0px;
+      display: block;
+      width: 40px; height: 40px;
+      opacity: 0.3;
+      &:hover{opacity: 0.6;}
+      img{
+         width: 100%;
+         height: 100%;
+      }
+   }
+   
+   &.open{
+      opacity: 1;
+      visibility: visible;
+      .popup__content {
+         opacity: 1;
+      }
+   }
+}
+// ============= slider popup  ===========
+.slider-popup1 {
+   position: relative;
+   display: flex;
+   flex-direction: column;
+
+   &__item{
+      position: relative;
+      background-size: contain;
+      min-height: 1000px;
+
+      @media (max-height: 1100px) {
+         min-height: 950px;
+      }
+      @media (max-height: 1000px) {
+         min-height: 800px;
+      }
+      @media (max-height: 900px) {
+         min-height: 700px;
+      }
+      @media (max-height: 800px) {
+         min-height: 600px;
+      }
+      @media (max-height: 700px) {
+         min-height: 500px;
+      }
+      @media (max-height: 600px) {
+         min-height: 400px;
+      }
+      @media (max-height: 500px) {
+         min-height: 300px;
+      }
+      @media (max-height: 400px) {
+         min-height: 200px;
+      }
+      
+      
+      img{
+         position: absolute;
+         top: 0;left: 0;
+         width: 100%;
+         height: 100%;
+      }
+   } 
+   .slick-track{
+      padding: 30px 0px 10px;
+
+   }
+   .slick-current{
+      
+
+   }
+   /* Ограничивающая оболочка */
+   .slick-list {
+      margin: 0px 40px 0px;
+      flex: 1 1 100%;
+   }
+   
+   .slick-arrow{
+      position: absolute;
+      top: 50%;
+      z-index: 10;
+      font-size: 0;
+      width: 30px; height: 30px;
+      margin: 0px 0px 0px;
+      opacity: 0.7;
+      &.slick-prev{
+         left: 0;
+         background: url(../img/icons/up-arrow-angle.png) 0 0 / 100% no-repeat;
+         transform: rotate(-90deg);
+      }
+      &.slick-next{
+         right: 0;
+         background: url(../img/icons/up-arrow-angle.png)0 0 / 100% no-repeat;
+         transform: rotate(90deg);
+      }
+      
+   }
+   .slick-dots{ 
+      order: -1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // z-index: 101;
+      li{
+         list-style: none;
+         margin: 30px 10px 0px;
+         /* Элемент точки */
+         button{
+            font-size: 0;
+            width: 10px; height: 10px;
+            border: 2px solid  rgba(14, 14, 14, 0.6);
+            background: #fff;
+            border-radius: 50%;
+         }
+         /* Активная точка */
+         &.slick-active{
+         button{
+            background-color: #ffffff;
+            transform: scale(1.5);
+            background-color:  rgba(14, 14, 14, 0.8);
+         }
+         }
+      }
+   }
+}
+

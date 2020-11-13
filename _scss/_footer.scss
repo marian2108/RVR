@@ -1,0 +1,48 @@
+// ========================== footer =================================
+.footer {
+   background-color: #f7f7f7;
+   padding: 0px 10px;
+   &__row {
+      display: flex;
+      padding: 20px 0px;
+      align-items: center;
+      @media (max-width: 1100px) {padding: 50px 0px;} 
+      @media (max-width: 600px) {
+         padding: 30px 0px;
+         flex-direction: column;
+         text-align: center;
+      } 
+   }
+   &__column {
+      flex: 0 1 33.333%;
+   }
+   &__address {
+      font-size: 16px;line-height: 18px;
+      color: #848789;
+      p{ &:first-child{font-weight: 700;}}
+   }
+   &__social {
+      @media (max-width: 600px){
+         margin: 15px 0px;
+      }
+   }
+}
+.social {
+   display: flex;
+   justify-content: center;align-items: center;
+   &__link {
+      margin: 0 7.5px;
+   }
+}
+.dev {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   &__text {
+      font-size: 14px;
+      line-height: 18px;
+      color: #848789;
+      font-style: italic;
+      padding-right: 10px;
+   }
+}
