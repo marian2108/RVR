@@ -3,6 +3,7 @@
 @import './_header';
 @import './footer';
 @import './ibg';
+@import './popup';
 
 
 body { font-family: 'Lora', serif;}
@@ -99,9 +100,9 @@ body { font-family: 'Lora', serif;}
    }
    &__hand-made{
       position: relative;
+      margin-top: -10%;
       max-width: 400px;
       flex: 1 1 50%;
-      justify-content: space-around;
       align-self: stretch;
       background-size: contain;
       img{
@@ -137,7 +138,6 @@ body { font-family: 'Lora', serif;}
    &__text {
       padding: 0px 0px 0px 20px;
       margin: 0px 0px 0px 10px;
-      // flex: 1 1 50%;
       font-style: italic;
       font-weight: bold;
       font-size: 26px;

@@ -4,10 +4,11 @@
 @import './slider';
 @import './footer';
 @import './ibg';
+@import './popup';
+
 $textcolor: #616263;
 
 body { 
-   // font-family: 'Roboto Mono', monospace;
    font-family: 'Lora', serif;
 }
 .wrapper{
@@ -290,9 +291,3 @@ position: relative;
       }
    }
 }
-
-
-
-
-
-

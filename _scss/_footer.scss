@@ -1,7 +1,7 @@
-// ========================== footer =================================
 .footer {
    background-color: #f7f7f7;
    padding: 0px 10px;
+   color: #2e2e2e;
    &__row {
       display: flex;
       padding: 20px 0px;
@@ -18,7 +18,7 @@
    }
    &__address {
       font-size: 16px;line-height: 18px;
-      color: #848789;
+      // color: #848789;
       p{ &:first-child{font-weight: 700;}}
    }
    &__social {
@@ -38,11 +38,77 @@
    display: flex;
    justify-content: flex-end;
    align-items: center;
+   
    &__text {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 18px;
-      color: #848789;
+      color: rgb(65, 52, 52);
       font-style: italic;
       padding-right: 10px;
+      &:hover{
+         transform: scale(1.2);
+         text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+         transition: all 0.6s ease;
+         color: rgb(43, 32, 32);
+         font-weight: 700;
+      }
+   }
+}
+.contacts-link-mm {
+   // height: 100%;
+   max-width: 550px; 
+   border-radius: 20px;
+   &__title{
+      height: 70px;
+      background: linear-gradient(90.27deg, rgba(14, 14, 14, 0.9) 16.76%, rgba(21, 8, 0, 0.774) 90.47%);
+      border-radius: 20px;
+      font-size: 34px;
+      line-height: 65px;
+      font-style: italic;
+      font-weight: 700;
+      text-align: center;
+      color: #ffffff;
+      margin: 0px 20px 50px;
+   }
+   &__item {
+      color: rgb(75, 75, 75);
+      display: flex;
+      align-content: center;
+      align-items: center;
+      padding: 0px 20px 30px 20px;
+      @media (max-width: 700px) {
+         padding: 0px 20px 30px 10px;
+      }
+      @media (max-width: 500px) {
+         padding: 0px 10px 30px 10px;
+      }
+   }
+
+   &__image {
+      width: 50px;
+   }
+
+   &__text {
+      display: block;
+      padding: 0px 20px 0px 20px;
+      margin: 0px 0px 0px 10px;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 50px;
+      border-radius: 20px;
+      color: rgb(75, 75, 75);
+      @media (max-width: 450px) {
+         font-size: 22px;
+      } 
+      &:hover{
+         transform: translateY(-5px);
+         border: 2px solid rgba(106, 106, 106, 0.8);
+         background: rgba(106, 106, 106, 0.78);
+         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+         transition: all 0.6s ease;
+         color: white;
+
+      }
    }
 }

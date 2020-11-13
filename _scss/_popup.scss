@@ -31,8 +31,16 @@ body.lock{
       position: absolute;
       top: 20px;right: 20px;
       display: block;
+      img{width: 40px; height: 40px;}
       width: 40px; height: 40px;
-      opacity: 0.6;
+      opacity: 0.4;
+      &:hover{
+         opacity: 0.6;
+         transition: all 0.5s ease;
+      }
+      @media (max-width: 500px) {
+         top: 10px;right: 10px;
+      } 
    }
    
    &.open{
@@ -41,6 +49,23 @@ body.lock{
       .popup__content {
          transform: perspective(500px) translate( 0px , 0%) rotateX(0deg);
          opacity: 1;
+      }
+   }
+}
+.popup-MM {
+   z-index: 99;
+   &__content {
+      background-color: #ffffff;
+      padding: 100px;
+      border-radius: 5%;
+      @media (max-width: 900px) {
+         padding: 70px;
+      } 
+      @media (max-width: 700px) {
+         padding: 50px;
+      }
+      @media (max-width: 500px) {
+         padding: 60px 10px 30px;
       }
    }
 }

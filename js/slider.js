@@ -11,7 +11,7 @@ $(document).ready(function(){
       touchThreshold:10,         // чим більше число тим менше потрібно протянути слайдер щоб прокрутити його ( по замовч. 5)
       centerMode: true,        // центральний слайд має клас .slick-center
       responsive: [{
-         breakpoint: 1100,
+         breakpoint: 1000,
          settings: {
             slidesToShow: 2,
             
@@ -19,9 +19,23 @@ $(document).ready(function(){
       },{
          breakpoint:850,
          settings: {
-            slidesToShow: 1
+            slidesToShow: 2,
+            centerMode: false,
          }
+      },
+      {breakpoint:750,
+         settings: {
+            slidesToShow: 1,
+            centerMode: false,
          }
+      },
+      {breakpoint:650,
+         settings: {
+            slidesToShow: 1,
+            arrows: false,
+            centerMode: false,
+         }
+      }
       ]
    });
 })

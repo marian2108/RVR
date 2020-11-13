@@ -61,16 +61,23 @@
       display: flex;
       li{
          padding: 0px 0 0 60px;
+        
       }
    }
 
    &__link {
-         font-size: 18px;
-         letter-spacing: 0.2em;
-         // color: #4d4959;
-         color: #2A292E;
-         text-transform: uppercase;
-         font-weight: 700;
+      font-size: 18px;
+      letter-spacing: 0.2em;
+      // color: #4d4959;
+      color: #2A292E;
+      text-transform: uppercase;
+      font-weight: 700;
+      &:hover{
+         color: #1a191f;
+         font-size: 22px;
+         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+         transition: all 0.5s ease;
+      }
    }
    @media (max-width:800px){
       &__body {
