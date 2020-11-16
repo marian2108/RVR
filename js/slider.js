@@ -44,7 +44,6 @@ $(document).ready(function(){
    $('.slider__body').slick({
       arrows:true,
       dots:true,
-      adaptiveHeight: false, // слайдер підлаштовується по висоті під контент
       slidesToShow: 3,     // show
       slidesToScroll: 1,   // scroll
       speed: 500, // speed

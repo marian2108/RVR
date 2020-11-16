@@ -400,6 +400,12 @@ h1, h2, h3, h4, h5, h6 {
   padding: 100px 0px 60px 0px;
 }
 
+@media (max-width: 1000px) {
+  .slider {
+    padding-top: 60px;
+  }
+}
+
 .slider__body {
   position: relative;
 }
@@ -446,6 +452,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider__icon img {
   width: 100px;
+}
+
+@media (max-width: 600px) {
+  .slider__icon img {
+    width: 70px;
+  }
 }
 
 .slider__title {
